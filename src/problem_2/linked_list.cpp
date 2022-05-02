@@ -5,6 +5,7 @@ void LinkedList<T>::push_front(const T &value) {
     /*
      * TODO: homework
      */
+
 }
 
 template<class T>
@@ -12,6 +13,17 @@ void LinkedList<T>::push_back(const T &value) {
     /*
      * TODO: homework
      */
+
+    ListNode<T> *tracker = head;
+
+    while(tracker->next != nullptr){
+        tracker = tracker->next;
+    }
+
+    num_of_element++;
+    tracker->next = new ListNode(value);
+
+
 }
 
 template<class T>

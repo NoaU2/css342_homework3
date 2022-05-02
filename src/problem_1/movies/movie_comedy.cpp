@@ -1,9 +1,7 @@
 #include "movie_comedy.h"
 
 int MovieComedy::calculate_late_fees(int num_of_days_past_due) {
-    /*
-     * TODO: homework
-     */
+
     if (num_of_days_past_due <= 0) {
         return 0;
     }

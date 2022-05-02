@@ -37,6 +37,15 @@ public:
         /*
          * TODO: homework
          */
+        if(other_list.head != nullptr) {
+            ListNode<T> *iterateOtherList = other_list.head;
+
+            while (iterateOtherList->next != nullptr) {
+                iterateOtherList = iterateOtherList->next;
+                push_back(iterateOtherList->val);
+
+            }
+        }
     }
 
     // destructor
