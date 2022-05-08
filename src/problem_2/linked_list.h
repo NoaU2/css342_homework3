@@ -34,9 +34,7 @@ public:
 
     // copy constructor
     LinkedList(const LinkedList<T> &other_list) : LinkedList() {
-        /*
-         * TODO: homework
-         */
+
         if(other_list.head != nullptr) {
             ListNode<T> *iterateOtherList = other_list.head;
 
